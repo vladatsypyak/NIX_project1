@@ -2,50 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Title</title>
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="flex_wrap header_top">
-            <a href="#" class="logo">
-                <img src="./images/logo.png" alt="">
-            </a>
-            <div class="input_group">
-                <button class="btn header_btn">
-                    Каталог
-                </button>
-                <input class="header_search search" placeholder="Поиск">
-            </div>
-            <nav class="nav_flex">
-                <a class="nav_item">Акции</a>
-                <a class="nav_item">Доставка</a>
-                <a class="nav_item">Контакты</a>
-                <a class="nav_item">Отзывы</a>
-                <a class="nav_item">Корзина</a>
+        <div class=" header_top">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="./index.html"> <img src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акції</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакти</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./basket.html">Корзина</a>
+                            </li>
+
+                        </ul>
+                        <form class=" form-inline my-2 my-lg-0">
+                            <input class="search form-control mr-sm-2" type="search" placeholder="Знайти товар"
+                                   aria-label="Пошук">
+                            <button class="btn header_btn my-2 my-sm-0" type="submit">Пошук</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
+
         </div>
         <div class="flex_wrap">
             <nav class="catalogue_nav">
                 <ul class="flex_wrap">
-                    <li>Латексные шары</li>
-                    <li>Фольгированые шары</li>
-                    <li>Цифры</li>
-                    <li>3D Сферы</li>
-                    <li>Хромовые шары</li>
+                    <li>Латексні Кульки</li>
+                    <li>Кульки з фольги</li>
+                    <li>Цифри</li>
+                    <li>3D Сфери</li>
+                    <li>Хромові кульки</li>
                 </ul>
             </nav>
             <div class="contacts flex_wrap">
                 <div class="number">+380 99 55 66 7 42</div>
                 <a href="#" class="social_media">
-                    <img src="./images/inst.png" alt="instagram">
+                    <img src="./images/inst.svg" alt="instagram">
                 </a>
                 <a href="#" class="social_media">
-                    <img src="./images/viber.png" alt="viber">
+                    <img src="./images/viber.svg" alt="viber">
 
                 </a>
-                <div class="working_hours">Режим работы <br><span>Круглосуточно</span></div>
+                <div class="working_hours">Години роботи <br><span>Цілодобово</span></div>
 
             </div>
         </div>
@@ -60,12 +81,12 @@
                 <div class="basket_item">
                     <img class="basket_item_img" src="./images/basket_item.png" alt="">
                     <div class="basket_item_desc">
-                        <p class="basket_item_title">Композиция шаров на день
-                            рождения</p>
+                        <p class="basket_item_title">Композиція кульок на День
+                            народження</p>
                         <div class="basket_item_quantity">
-                            <p>-</p>
+                            <p class="sign">-</p>
                             <p>1</p>
-                            <P>+</P>
+                            <P class="sign">+</P>
                         </div>
                     </div>
                     <p class="basket_item_price">700<span>грн</span></p>
@@ -77,12 +98,12 @@
                 <div class="basket_item">
                     <img class="basket_item_img" src="./images/basket_item.png" alt="">
                     <div class="basket_item_desc">
-                        <p class="basket_item_title">Композиция шаров на день
-                            рождения</p>
+                        <p class="basket_item_title">Композиція кульок на День
+                            народження</p>
                         <div class="basket_item_quantity">
-                            <p>-</p>
+                            <p class="sign">-</p>
                             <p>1</p>
-                            <P>+</P>
+                            <P class="sign">+</P>
                         </div>
                     </div>
                     <p class="basket_item_price">700<span>грн</span></p>
@@ -94,12 +115,12 @@
                 <div class="basket_item">
                     <img class="basket_item_img" src="./images/basket_item.png" alt="">
                     <div class="basket_item_desc">
-                        <p class="basket_item_title">Композиция шаров на день
-                            рождения</p>
+                        <p class="basket_item_title">Композиція кульок на День
+                            народження</p>
                         <div class="basket_item_quantity">
-                            <p>-</p>
+                            <p class="sign">-</p>
                             <p>1</p>
-                            <P>+</P>
+                            <P class="sign">+</P>
                         </div>
                     </div>
                     <p class="basket_item_price">700<span>грн</span></p>
@@ -111,24 +132,50 @@
 
             </div>
             <div class="basket_details">
-                <p class="basket_details_title">Детали заказа</p>
+                <p class="basket_details_title">Деталі замовлення</p>
                 <div class="basket_details_info flex_wrap">
                     <div class="basket_details_info_text">
-                        <p>Колличество</p>
-                        <p>Сумма</p>
+                        <p>Кількість</p>
+                        <p>Сума</p>
 
                     </div>
                     <div class="basket_details_info_characters">
-                        <p>1</p>
+                        <p>3</p>
                         <p class="basket_details_price">2100<span>грн</span></p>
                     </div>
                 </div>
-                <input placeholder="Ваш номер телефона" type="text" class="basket_details_input">
-                <button class="btn basket_details_btn ">Заказать</button>
+                <a href="form.html" class=" basket_details_btn ">Оформити замовлення</a>
             </div>
         </div>
     </div>
 </section>
+<footer class="footer_wrap">
+    <nav class="footer_nav">
+
+        <a class="footer_nav_item">Акциі</a>
+        <a class="footer_nav_item">Доставка</a>
+        <a class="footer_nav_item">Контакти</a>
+        <a class="footer_nav_item">Відгуки</a>
+        <a class="footer_nav_item">Корзина</a>
+
+    </nav>
+    <div class="footer_contacts">
+        <p class="footer_contacts_title footer_contacts_item">Контакти</p>
+        <p class="footer_contacts_item">email@gmail.com</p>
+        <p class="footer_contacts_item">+380 99 55 66 742</p>
+        <p class="footer_contacts_item">м. Харків вул. Мілютенка 6</p>
+        <a href="#" class="social_media">
+            <img src="./images/inst.svg" alt="instagram">
+        </a>
+        <a href="#" class="social_media">
+            <img src="./images/viber.svg" alt="viber">
+
+        </a>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
